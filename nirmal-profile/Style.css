@@ -602,69 +602,81 @@ img{
 
 /* ================= TECH LAB ================= */
 
-.tech-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:18px;
+.tech-lab {
+    background: var(--bg-soft);
 }
 
-.technology-card,
-.focus-card,
-.code-card{
-  border:1px solid var(--line);
-  background:var(--card);
-  border-radius:18px;
-  overflow:hidden;
+
+.tech-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
 }
 
-.technology-card{
-  grid-row:span 2;
-  min-height:790px;
-  position:relative;
+
+.tech-card {
+    min-height: 320px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    padding: 30px;
 }
 
-.technology-card img{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  opacity:.5;
+
+.tech-image-card {
+    padding: 0;
 }
 
-.technology-overlay{
-  position:absolute;
-  inset:0;
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
-  padding:35px;
-  background:linear-gradient(
-    transparent 25%,
-    rgba(3,7,18,.98)
-  );
+
+.tech-image-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: .7;
 }
 
-.technology-overlay small{
-  color:var(--blue);
-  font-size:.57rem;
-  font-weight:800;
-  letter-spacing:.17em;
+
+.tech-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    background:
+        linear-gradient(
+            transparent 20%,
+            rgba(2,6,23,.95)
+        );
 }
 
-.technology-overlay h3{
-  max-width:550px;
-  font-family:"Space Grotesk",sans-serif;
-  font-size:2rem;
-  line-height:1.15;
-  margin-top:10px;
+
+.tech-overlay span,
+.tech-number {
+    color: var(--accent);
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
 }
 
-.technology-overlay p{
-  color:var(--muted);
-  font-size:.7rem;
-  margin-top:9px;
-}
 
 /* ================= TIMER ================= */
 
