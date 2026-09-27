@@ -916,6 +916,108 @@ img{
   color:#64748b;
 }
 
+
+
+.code-card {
+    background: #050b14;
+}
+
+
+.code-header {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 25px;
+}
+
+
+.code-header span {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: var(--text-muted);
+}
+
+
+.code-header strong {
+    margin-left: 10px;
+
+    color: var(--text-soft);
+
+    font-size: 12px;
+}
+
+
+.code-card pre {
+    overflow-x: auto;
+
+    color: #a5f3fc;
+
+    font-family: monospace;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+.status-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+
+    background: #22c55e;
+
+    border-radius: 50%;
+
+    margin-top: 20px;
+
+    box-shadow: 0 0 20px rgba(34,197,94,.7);
+}
+
+
+.status-list {
+    margin-top: 25px;
+
+    display: grid;
+
+    gap: 10px;
+}
+
+
+.status-list div {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid var(--border);
+
+    font-size: 12px;
+}
+
+
+.status-list div span {
+    color: var(--text-soft);
+}
+
+
+.status-list strong {
+    color: #22c55e;
+
+    font-size: 10px;
+}
+
 /* ================= ABOUT ================= */
 
 .about-section{
